@@ -106,5 +106,45 @@ public class MainActivity extends AppCompatActivity {
                 edt1.setText(edt1.getText()+"0");
             }
         });
+        buttonAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (edt1 == null){
+                    edt1.setText("");
+                }else {
+                    mValueOne = Float.parseFloat(edt1.getText() + "");
+                    mAddition = true;
+                    edt1.setText(null);
+                }
+            }
+        });
+
+        buttonSub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mValueOne = Float.parseFloat(edt1.getText() + "");
+                mSubtract = true ;
+                edt1.setText(null);
+            }
+        });
+
+        buttonMul.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mValueOne = Float.parseFloat(edt1.getText() + "");
+                mMultiplication = true ;
+                edt1.setText(null);
+            }
+        });
+
+        buttonDivision.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mValueOne = Float.parseFloat(edt1.getText()+"");
+                mDivision = true ;
+                edt1.setText(null);
+            }
+        });
     }
 }
