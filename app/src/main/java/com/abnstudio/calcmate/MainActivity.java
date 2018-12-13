@@ -175,6 +175,19 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        buttonC.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                edt1.setText("");
+            }
+        });
+
+        button10.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                edt1.setText(edt1.getText()+".");
+            }
+        });
 
     }
 }
