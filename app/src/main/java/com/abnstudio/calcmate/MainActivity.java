@@ -5,12 +5,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
     Button button0 , button1 , button2 , button3 , button4 , button5 , button6 ,
             button7 , button8 , button9 , buttonAdd , buttonSub , buttonDivision ,
             buttonMul , button10 , buttonC , buttonEqual ;
-    EditText edt1 ;
+    TextView edt1 ;
     float mValueOne, mValueTwo;
     boolean mAddition , mSubtract ,mMultiplication ,mDivision ;
     @Override
@@ -156,7 +157,6 @@ public class MainActivity extends AppCompatActivity {
                         edt1.setText(mValueOne + mValueTwo + "");
                         mAddition = false;
                     }
-
 
                     if (mSubtract == true) {
                         edt1.setText(mValueOne - mValueTwo + "");
