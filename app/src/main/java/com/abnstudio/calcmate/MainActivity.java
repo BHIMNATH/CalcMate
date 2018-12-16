@@ -1,5 +1,6 @@
 package com.abnstudio.calcmate;
 
+import android.annotation.SuppressLint;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -29,12 +30,12 @@ public class MainActivity extends AppCompatActivity {
         button7 = findViewById(R.id.button7);
         button8 = findViewById(R.id.button8);
         button9 = findViewById(R.id.button9);
-        buttonDot = findViewById(R.id.buttonDot);
+        buttonDot = findViewById(R.id.buttondot);
         buttonAdd = findViewById(R.id.buttonadd);
         buttonSub = findViewById(R.id.buttonsub);
         buttonMul = findViewById(R.id.buttonmul);
         buttonDivision = findViewById(R.id.buttondiv);
-        buttonC = findViewById(R.id.buttonC);
+        buttonC = findViewById(R.id.buttonac);
         buttonEqual = findViewById(R.id.buttoneql);
         edt1 = findViewById(R.id.edt1);
 
@@ -182,11 +183,12 @@ public class MainActivity extends AppCompatActivity {
         buttonC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                edt1.setText("");
+                edt1.setText("0");
             }
         });
 
-        button10.setOnClickListener(new View.OnClickListener() {
+        buttonDot.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 edt1.setText(edt1.getText()+".");
