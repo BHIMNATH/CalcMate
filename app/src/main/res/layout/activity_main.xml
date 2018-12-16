@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
+    <include
+        layout="@layout/calcmate_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"/>
     <TextView
         android:layout_marginTop="10dp"
         android:id="@+id/edt1"
@@ -193,4 +199,4 @@
         android:layout_alignEnd="@+id/buttondiv"
         android:layout_alignLeft="@+id/button10"
         android:layout_alignStart="@+id/button10" />
-</RelativeLayout>
+</LinearLayout>
