@@ -150,27 +150,31 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mValueTwo = Float.parseFloat(edt1.getText() + "");
+                try {
+                    if (mAddition == true) {
 
-                if (mAddition == true){
+                        edt1.setText(mValueOne + mValueTwo + "");
+                        mAddition = false;
+                    }
 
-                    edt1.setText(mValueOne + mValueTwo +"");
-                    mAddition=false;
+
+                    if (mSubtract == true) {
+                        edt1.setText(mValueOne - mValueTwo + "");
+                        mSubtract = false;
+                    }
+
+                    if (mMultiplication == true) {
+                        edt1.setText(mValueOne * mValueTwo + "");
+                        mMultiplication = false;
+                    }
+
+                    if (mDivision == true) {
+                        edt1.setText(mValueOne / mValueTwo + "");
+                        mDivision = false;
+                    }
                 }
-
-
-                if (mSubtract == true){
-                    edt1.setText(mValueOne - mValueTwo+"");
-                    mSubtract=false;
-                }
-
-                if (mMultiplication == true){
-                    edt1.setText(mValueOne * mValueTwo+"");
-                    mMultiplication=false;
-                }
-
-                if (mDivision == true){
-                    edt1.setText(mValueOne / mValueTwo+"");
-                    mDivision=false;
+                catch (Exception e){
+                    e.printStackTrace();
                 }
             }
         });
