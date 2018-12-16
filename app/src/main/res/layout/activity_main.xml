@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#c7c7c7"
+    android:background="#dedede"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -40,13 +40,24 @@
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
-
+            <Button
+                android:id="@+id/buttonbackspace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorButton"
+                android:minHeight="80dp"
+                android:text="<<"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold" />
             <Button
                 android:id="@+id/buttonpercent"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
-                android:layout_marginRight="2dp"
                 android:layout_weight="1"
                 android:background="@color/colorButton"
                 android:minHeight="80dp"
@@ -60,6 +71,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:layout_marginLeft="2dp"
                 android:background="@color/colorButton"
                 android:minHeight="80dp"
                 android:text="/"
@@ -115,7 +127,7 @@
                 android:layout_weight="1"
                 android:background="@color/colorButton"
                 android:minHeight="80dp"
-                android:text="X"
+                android:text="x"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="30sp"
                 android:textStyle="bold" />
@@ -234,7 +246,7 @@
 
             <Button
                 android:id="@+id/button0"
-                android:layout_width="129dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/colorButton"
@@ -251,6 +263,17 @@
                 android:background="@color/colorButton"
                 android:minHeight="80dp"
                 android:text="."
+                android:textColor="#333"
+                android:textSize="25sp" />
+            <Button
+                android:id="@+id/buttonc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="@color/colorButton"
+                android:minHeight="80dp"
+                android:text="C"
                 android:textColor="#333"
                 android:textSize="25sp" />
 
