@@ -51,7 +51,7 @@
                 android:layout_weight="1"
                 android:background="@color/colorButton"
                 android:minHeight="80dp"
-                android:text="C"
+                android:text="@string/square_root_symbol"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="30sp"
                 android:textStyle="bold"
