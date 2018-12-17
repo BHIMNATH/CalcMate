@@ -49,8 +49,9 @@
                 android:layout_marginLeft="2dp"
                 android:layout_marginRight="2dp"
                 android:layout_weight="1"
-                android:background="@drawable/bs"
+                android:background="@color/colorButton"
                 android:minHeight="80dp"
+                android:text="C"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="30sp"
                 android:textStyle="bold"
@@ -311,10 +312,12 @@
                 android:background="#0d5ce4"
                 android:textColor="#fff"
                 android:minHeight="80dp"
+                android:layout_marginLeft="2dp"
                 android:text="="
                 android:textSize="30sp"
                 android:textStyle="bold"
-                tools:ignore="ButtonStyle" />
+                tools:ignore="ButtonStyle"
+                android:layout_marginStart="2dp" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
