@@ -11,7 +11,7 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     Button button0 , button1 , button2 , button3 , button4 , button5 , button6 ,
             button7 , button8 , button9 , buttonAdd , buttonSub , buttonDivision ,
-            buttonMul , buttonDot , buttonAC , buttonEqual, buttonBackspace, buttonPercent ;
+            buttonMul , buttonDot , buttonAC , buttonEqual, buttonBackspace, buttonPercent, buttonSqrt ;
     TextView display ;
     float mValueOne, mValueTwo;
     boolean mAddition , mSubtract ,mMultiplication ,mDivision ;
@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
         buttonBackspace = findViewById(R.id.buttonbackspace);
         buttonPercent = findViewById(R.id.buttonpercent);
         display = findViewById(R.id.edt1);
+        buttonSqrt = findViewById(R.id.buttonsqrt);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -215,6 +216,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 display.setText((int) (Float.parseFloat(display.getText() + "")/100.0f));
+            }
+        });
+        buttonSqrt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                display.setText((int) (Math.sqrt(Double.parseDouble(display.getText() + ""))));
             }
         });
     }

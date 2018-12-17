@@ -43,7 +43,7 @@
                 tools:ignore="ButtonStyle" />
 
             <Button
-                android:id="@+id/buttonbackspace"
+                android:id="@+id/buttonsqrt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
@@ -291,7 +291,7 @@
                 android:layout_marginStart="2dp"
                 tools:ignore="ButtonStyle" />
             <Button
-                android:id="@+id/buttonc"
+                android:id="@+id/buttonbackspace"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
