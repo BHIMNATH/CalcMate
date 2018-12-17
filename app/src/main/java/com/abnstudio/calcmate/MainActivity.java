@@ -200,7 +200,14 @@ public class MainActivity extends AppCompatActivity {
         buttonBackspace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                String str=display.getText().toString();
+                if (str.length() > 1 ) {
+                    str = str.substring(0, str.length() - 1);
+                    display.setText(str);
+                }
+                else {
+                    display.setText("0");
+                }
             }
         });
 
