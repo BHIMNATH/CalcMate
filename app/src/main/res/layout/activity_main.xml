@@ -12,7 +12,8 @@
         android:gravity="bottom"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
         <TextView
             android:id="@+id/edt1"
             android:layout_width="match_parent"
@@ -38,7 +39,8 @@
                 android:minHeight="80dp"
                 android:text="AC"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/buttonbackspace"
@@ -47,12 +49,12 @@
                 android:layout_marginLeft="2dp"
                 android:layout_marginRight="2dp"
                 android:layout_weight="1"
-                android:background="@color/colorButton"
+                android:background="@drawable/bs"
                 android:minHeight="80dp"
-                android:text="<<"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle,HardcodedText" />
             <Button
                 android:id="@+id/buttonpercent"
                 android:layout_width="wrap_content"
@@ -61,10 +63,12 @@
                 android:layout_weight="1"
                 android:background="@color/colorButton"
                 android:minHeight="80dp"
-                android:text="%"
+                android:text="@string/percent"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle"
+                android:layout_marginStart="2dp" />
 
             <Button
                 android:id="@+id/buttondiv"
@@ -74,10 +78,12 @@
                 android:layout_marginLeft="2dp"
                 android:background="@color/colorButton"
                 android:minHeight="80dp"
-                android:text="/"
+                android:text="@string/divide"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle"
+                android:layout_marginStart="2dp" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -93,7 +99,8 @@
                 android:minHeight="80dp"
                 android:text="7"
                 android:textColor="#333"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button8"
@@ -105,7 +112,9 @@
                 android:minHeight="80dp"
                 android:text="8"
                 android:textColor="#333"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                android:layout_marginStart="2dp"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button9"
@@ -118,7 +127,8 @@
                 android:minHeight="80dp"
                 android:text="9"
                 android:textColor="#333"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/buttonmul"
@@ -130,7 +140,8 @@
                 android:text="x"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -146,7 +157,8 @@
                 android:minHeight="80dp"
                 android:text="4"
                 android:textColor="#333"
-                android:textSize="25sp"/>
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle" />
             <Button
                 android:id="@+id/button5"
                 android:layout_width="wrap_content"
@@ -157,7 +169,9 @@
                 android:minHeight="80dp"
                 android:text="5"
                 android:textColor="#333"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle"
+                android:layout_marginStart="2dp" />
 
             <Button
                 android:id="@+id/button6"
@@ -170,7 +184,8 @@
                 android:minHeight="80dp"
                 android:text="6"
                 android:textColor="#333"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/buttonsub"
@@ -182,7 +197,8 @@
                 android:text="-"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -198,7 +214,8 @@
                 android:minHeight="80dp"
                 android:text="1"
                 android:textColor="#333"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button2"
@@ -210,7 +227,9 @@
                 android:minHeight="80dp"
                 android:text="2"
                 android:textColor="#333"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle"
+                android:layout_marginStart="2dp" />
 
             <Button
                 android:id="@+id/button3"
@@ -223,7 +242,8 @@
                 android:minHeight="80dp"
                 android:text="3"
                 android:textColor="#333"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/buttonadd"
@@ -235,7 +255,8 @@
                 android:text="+"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
@@ -253,7 +274,8 @@
                 android:minHeight="80dp"
                 android:text="0"
                 android:textColor="#333"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle" />
             <Button
                 android:id="@+id/buttondot"
                 android:layout_width="wrap_content"
@@ -264,7 +286,9 @@
                 android:minHeight="80dp"
                 android:text="."
                 android:textColor="#333"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                android:layout_marginStart="2dp"
+                tools:ignore="ButtonStyle" />
             <Button
                 android:id="@+id/buttonc"
                 android:layout_width="wrap_content"
@@ -275,7 +299,9 @@
                 android:minHeight="80dp"
                 android:text="C"
                 android:textColor="#333"
-                android:textSize="25sp" />
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle"
+                android:layout_marginStart="2dp" />
 
             <Button
                 android:id="@+id/buttoneql"
@@ -287,7 +313,8 @@
                 android:minHeight="80dp"
                 android:text="="
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>
