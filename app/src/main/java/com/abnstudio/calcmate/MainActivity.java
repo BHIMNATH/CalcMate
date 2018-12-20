@@ -311,7 +311,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    display.setText((int) (Math.sqrt(Double.parseDouble(display.getText() + ""))));
+                    display.setText((int) (Math.sqrt(Float.parseFloat(display.getText() + ""))));
                 }
                 catch (Exception e){
                     e.printStackTrace();
