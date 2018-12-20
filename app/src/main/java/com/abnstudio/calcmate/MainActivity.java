@@ -45,7 +45,12 @@ public class MainActivity extends AppCompatActivity {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                display.setText(display.getText()+"1");
+                try {
+                    display.setText(display.getText() + "1");
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
 
@@ -251,7 +256,12 @@ public class MainActivity extends AppCompatActivity {
         buttonAC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                display.setText("0");
+                try {
+                    display.setText("0");
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
 
