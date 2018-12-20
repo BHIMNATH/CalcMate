@@ -215,13 +215,23 @@ public class MainActivity extends AppCompatActivity {
         buttonPercent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                display.setText((int) (Float.parseFloat(display.getText() + "")/100.0f));
+                try {
+                    display.setText((int) (Float.parseFloat(display.getText() + "") / 100.0f));
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
         buttonSqrt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                display.setText((int) (Math.sqrt(Double.parseDouble(display.getText() + ""))));
+                try {
+                    display.setText((int) (Math.sqrt(Double.parseDouble(display.getText() + ""))));
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
     }
