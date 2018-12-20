@@ -52,7 +52,12 @@ public class MainActivity extends AppCompatActivity {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                display.setText(display.getText()+"2");
+                try {
+                    display.setText(display.getText() + "2");
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
 
