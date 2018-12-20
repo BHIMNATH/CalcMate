@@ -269,20 +269,29 @@ public class MainActivity extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                display.setText(display.getText()+".");
+                try {
+                    display.setText(display.getText() + ".");
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
 
         buttonBackspace.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String str=display.getText().toString();
-                if (str.length() > 1 ) {
-                    str = str.substring(0, str.length() - 1);
-                    display.setText(str);
+                try {
+                    String str = display.getText().toString();
+                    if (str.length() > 1) {
+                        str = str.substring(0, str.length() - 1);
+                        display.setText(str);
+                    } else {
+                        display.setText("0");
+                    }
                 }
-                else {
-                    display.setText("0");
+                catch (Exception e){
+                    e.printStackTrace();
                 }
             }
         });
