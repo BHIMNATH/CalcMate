@@ -11,9 +11,9 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
     Button button0 , button1 , button2 , button3 , button4 , button5 , button6 ,
             button7 , button8 , button9 , buttonAdd , buttonSub , buttonDivision ,
-            buttonMul , buttonDot , buttonAC , buttonEqual, buttonBackspace, buttonPercent, buttonSqrt ;
+            buttonMul , buttonDot , buttonAC , buttonEqual, buttonBackspace, buttonAns, buttonSqrt ;
     TextView display ;
-    float mValueOne, mValueTwo;
+    float mValueOne, mValueTwo, lastAns = 0;
     boolean mAddition , mSubtract ,mMultiplication ,mDivision ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         buttonAC = findViewById(R.id.buttonac);
         buttonEqual = findViewById(R.id.buttoneql);
         buttonBackspace = findViewById(R.id.buttonbackspace);
-        buttonPercent = findViewById(R.id.buttonpercent);
+        buttonAns = findViewById(R.id.buttonAns);
         display = findViewById(R.id.edt1);
         buttonSqrt = findViewById(R.id.buttonsqrt);
 
@@ -227,23 +227,26 @@ public class MainActivity extends AppCompatActivity {
                 mValueTwo = Float.parseFloat(display.getText() + "");
                 try {
                     if (mAddition) {
-
-                        display.setText(mValueOne + mValueTwo + "");
+                        lastAns = mValueOne + mValueTwo;
+                        display.setText( lastAns + "");
                         mAddition = false;
                     }
 
                     if (mSubtract) {
-                        display.setText(mValueOne - mValueTwo + "");
+                        lastAns = mValueOne - mValueTwo;
+                        display.setText( lastAns + "");
                         mSubtract = false;
                     }
 
                     if (mMultiplication) {
-                        display.setText(mValueOne * mValueTwo + "");
+                        lastAns = mValueOne * mValueTwo;
+                        display.setText(lastAns + "");
                         mMultiplication = false;
                     }
 
                     if (mDivision) {
-                        display.setText(mValueOne / mValueTwo + "");
+                        lastAns = mValueOne / mValueTwo;
+                        display.setText( lastAns + "");
                         mDivision = false;
                     }
                 }
@@ -296,11 +299,12 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonPercent.setOnClickListener(new View.OnClickListener() {
+        buttonAns.setOnClickListener(new View.OnClickListener() {
+            @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
                 try {
-                    display.setText((int) (Float.parseFloat(display.getText() + "") / 100.0f));
+                    display.setText("ANS");
                 }
                 catch (Exception e){
                     e.printStackTrace();
@@ -311,7 +315,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
-                    display.setText((int) (Math.sqrt(Float.parseFloat(display.getText() + ""))));
+                    display.setText((int) (Math.sqrt(Float.parseFloat(display.getText().toString()))));
                 }
                 catch (Exception e){
                     e.printStackTrace();
