@@ -59,96 +59,156 @@ public class MainActivity extends AppCompatActivity {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                display.setText(display.getText()+"3");
+                try {
+                    display.setText(display.getText()+"3");
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
 
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                display.setText(display.getText()+"4");
+                try {
+                    display.setText(display.getText() + "4");
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
 
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                display.setText(display.getText()+"5");
+                try {
+                    display.setText(display.getText() + "5");
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
 
         button6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                display.setText(display.getText()+"6");
+                try {
+                    display.setText(display.getText() + "6");
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
 
         button7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                display.setText(display.getText()+"7");
+                try {
+                    display.setText(display.getText() + "7");
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
 
         button8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                display.setText(display.getText()+"8");
+                try {
+                    display.setText(display.getText() + "8");
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
 
         button9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                display.setText(display.getText()+"9");
+                try {
+                    display.setText(display.getText() + "9");
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
 
         button0.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                display.setText(display.getText()+"0");
+                try {
+                    display.setText(display.getText()+"0");
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-                if (display == null){
-                    display.setText("");
-                }else {
-                    mValueOne = Float.parseFloat(display.getText() + "");
-                    mAddition = true;
-                    display.setText(null);
+                try {
+                    if (display == null){
+                        display.setText("");
+                    }else {
+                        mValueOne = Float.parseFloat(display.getText() + "");
+                        mAddition = true;
+                        display.setText(null);
+                    }
                 }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
+
             }
         });
 
         buttonSub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mValueOne = Float.parseFloat(display.getText() + "");
-                mSubtract = true ;
-                display.setText(null);
+                try {
+                    mValueOne = Float.parseFloat(display.getText() + "");
+                    mSubtract = true;
+                    display.setText(null);
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
 
         buttonMul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mValueOne = Float.parseFloat(display.getText() + "");
-                mMultiplication = true ;
-                display.setText(null);
+                try {
+                    mValueOne = Float.parseFloat(display.getText() + "");
+                    mMultiplication = true;
+                    display.setText(null);
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
 
         buttonDivision.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mValueOne = Float.parseFloat(display.getText()+"");
-                mDivision = true ;
-                display.setText(null);
+                try {
+                    mValueOne = Float.parseFloat(display.getText() + "");
+                    mDivision = true;
+                    display.setText(null);
+                }
+                catch (Exception e){
+                    e.printStackTrace();
+                }
             }
         });
         buttonEqual.setOnClickListener(new View.OnClickListener() {
