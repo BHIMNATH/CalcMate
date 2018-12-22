@@ -51,25 +51,25 @@
                 android:layout_weight="1"
                 android:background="@color/colorButton"
                 android:minHeight="80dp"
-                android:text="@string/square_root_symbol"
+                android:text=""
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle,HardcodedText" />
             <Button
-                android:id="@+id/buttonbackspace"
+                android:id="@+id/buttonAns"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
                 android:layout_weight="1"
                 android:background="@color/colorButton"
                 android:minHeight="80dp"
-                android:text="Del"
-                android:textColor="@color/colorPrimaryDark"
-                android:textSize="30sp"
-                android:textStyle="bold"
+                android:text=""
+                android:textColor="#333"
+                android:textSize="25sp"
                 tools:ignore="ButtonStyle"
                 android:layout_marginStart="2dp" />
+
 
             <Button
                 android:id="@+id/buttondiv"
@@ -291,16 +291,17 @@
                 android:layout_marginStart="2dp"
                 tools:ignore="ButtonStyle" />
             <Button
-                android:id="@+id/buttonAns"
+                android:id="@+id/buttonbackspace"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="2dp"
                 android:layout_weight="1"
                 android:background="@color/colorButton"
                 android:minHeight="80dp"
-                android:text="Ans"
-                android:textColor="#333"
-                android:textSize="25sp"
+                android:text="Del"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="30sp"
+                android:textStyle="bold"
                 tools:ignore="ButtonStyle"
                 android:layout_marginStart="2dp" />
 

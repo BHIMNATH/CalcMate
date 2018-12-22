@@ -303,23 +303,18 @@ public class MainActivity extends AppCompatActivity {
             @SuppressLint("SetTextI18n")
             @Override
             public void onClick(View v) {
-                try {
-                    display.setText("ANS");
-                }
-                catch (Exception e){
-                    e.printStackTrace();
-                }
+
             }
         });
         buttonSqrt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                try {
-                    display.setText((int) (Math.sqrt(Float.parseFloat(display.getText().toString()))));
-                }
-                catch (Exception e){
-                    e.printStackTrace();
-                }
+//                try {
+//                    display.setText((int) Math.sqrt(Integer.parseInt(String.valueOf(display.getText()))));
+//                }
+//                catch (Exception e){
+//                    e.printStackTrace();
+//                }
             }
         });
     }
