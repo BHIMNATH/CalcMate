@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#0d5ce4</color>
-    <color name="colorPrimaryDark">#002457</color>
+    <color name="colorPrimary">#F44336</color>
+    <color name="colorPrimaryDark">#d21809</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorButton">#FFF</color>
 
@@ -10,5 +10,5 @@
     <color name="button_default">#ffffff</color>
 
     <color name="button_eq_pressed">#609aff</color>
-    <color name="button_eq_default">#0d5ce4</color>
+    <color name="button_eq_default">#F44336</color>
 </resources>
