@@ -8,4 +8,7 @@
     <color name="button_pressed">#c2c2c2</color>
     <color name="button_focused">#c2c2c2</color>
     <color name="button_default">#ffffff</color>
+
+    <color name="button_eq_pressed">#609aff</color>
+    <color name="button_eq_default">#0d5ce4</color>
 </resources>
