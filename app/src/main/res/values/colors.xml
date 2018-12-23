@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#002457</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorButton">#FFF</color>
+
+    <color name="button_pressed">#ff8a00</color>
+    <color name="button_focused">#ff8a00</color>
+    <color name="button_default">#1c76bb</color>
 </resources>
