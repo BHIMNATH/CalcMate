@@ -81,7 +81,6 @@
                 android:text="."
                 android:textColor="#333"
                 android:textSize="25sp"
-                android:layout_marginStart="2dp"
                 tools:ignore="ButtonStyle"
                 android:layout_marginEnd="2dp" />
             <Button
@@ -89,7 +88,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
                 android:background="@drawable/buttonbg"
                 android:minHeight="80dp"
                 android:text="@string/divide"
@@ -97,7 +96,7 @@
                 android:textSize="30sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle"
-                android:layout_marginStart="2dp" />
+                android:layout_marginEnd="2dp" />
             <Button
                 android:id="@+id/buttoneql"
                 android:layout_width="wrap_content"
@@ -219,6 +218,7 @@
             <Button
                 android:id="@+id/button1"
                 android:layout_width="wrap_content"
+                android:layout_marginRight="2dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/buttonbg"
@@ -226,7 +226,8 @@
                 android:text="1"
                 android:textColor="#333"
                 android:textSize="25sp"
-                tools:ignore="ButtonStyle" />
+                tools:ignore="ButtonStyle"
+                android:layout_marginEnd="2dp" />
             <Button
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
