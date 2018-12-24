@@ -42,44 +42,17 @@
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />
 
-            <Button
-                android:id="@+id/buttonsqrt"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="2dp"
-                android:layout_weight="1"
-                android:background="@color/colorButton"
-                android:minHeight="80dp"
-                android:text=""
-                android:textColor="#333"
-                android:textSize="25sp"
-                android:layout_marginStart="2dp"
-                tools:ignore="ButtonStyle" />
-            <Button
-                android:id="@+id/buttonAns"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="2dp"
-                android:layout_weight="1"
-                android:background="@color/colorButton"
-                android:minHeight="80dp"
-                android:text=""
-                android:textColor="#333"
-                android:textSize="25sp"
-                tools:ignore="ButtonStyle"
-                android:layout_marginStart="2dp" />
-
 
             <Button
-                android:id="@+id/buttondiv"
+                android:id="@+id/buttonbackspace"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginLeft="2dp"
+                android:layout_weight="1"
                 android:background="@drawable/buttonbg"
                 android:minHeight="80dp"
-                android:text="@string/divide"
-                android:textColor="@color/colorPrimaryDark"
+                android:text="Del"
+                android:textColor="#000"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle"
@@ -138,7 +111,7 @@
                 android:background="@drawable/buttonbg"
                 android:minHeight="80dp"
                 android:text="x"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="#000"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />
@@ -195,7 +168,7 @@
                 android:background="@drawable/buttonbg"
                 android:minHeight="80dp"
                 android:text="-"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="#000"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />
@@ -253,7 +226,7 @@
                 android:background="@drawable/buttonbg"
                 android:minHeight="80dp"
                 android:text="+"
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="#000"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />
@@ -290,20 +263,19 @@
                 android:layout_marginStart="2dp"
                 tools:ignore="ButtonStyle" />
             <Button
-                android:id="@+id/buttonbackspace"
+                android:id="@+id/buttondiv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="2dp"
                 android:layout_weight="1"
+                android:layout_marginLeft="2dp"
                 android:background="@drawable/buttonbg"
                 android:minHeight="80dp"
-                android:text="Del"
-                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/divide"
+                android:textColor="#000"
                 android:textSize="30sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle"
                 android:layout_marginStart="2dp" />
-
             <Button
                 android:id="@+id/buttoneql"
                 android:layout_width="wrap_content"

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#F44336</color>
-    <color name="colorPrimaryDark">#d21809</color>
+    <color name="colorPrimaryDark">#ff2715</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorButton">#FFF</color>
 
-    <color name="button_pressed">#c2c2c2</color>
-    <color name="button_focused">#c2c2c2</color>
+    <color name="button_pressed">#cecece</color>
+    <color name="button_focused">#cecece</color>
     <color name="button_default">#ffffff</color>
 
-    <color name="button_eq_pressed">#609aff</color>
+    <color name="button_eq_pressed">#ff8177</color>
     <color name="button_eq_default">#F44336</color>
 </resources>
