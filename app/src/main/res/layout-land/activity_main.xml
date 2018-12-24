@@ -62,25 +62,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/buttonbg"
+                android:layout_marginRight="2dp"
                 android:minHeight="80dp"
                 android:text="x"
                 android:textColor="#000"
                 android:textSize="30sp"
                 android:textStyle="bold"
-                tools:ignore="ButtonStyle" />
-            <Button
-                android:id="@+id/buttonsub"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="2dp"
-                android:layout_weight="1"
-                android:background="@drawable/buttonbg"
-                android:minHeight="80dp"
-                android:text="-"
-                android:textColor="#000"
-                android:textSize="30sp"
-                android:textStyle="bold"
-                tools:ignore="ButtonStyle" />
+                tools:ignore="ButtonStyle"
+                android:layout_marginEnd="2dp" />
             <Button
                 android:layout_marginRight="2dp"
                 android:id="@+id/buttondot"
@@ -194,6 +183,20 @@
                 android:textColor="#333"
                 android:textSize="25sp"
                 tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/buttonsub"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonbg"
+                android:minHeight="80dp"
+                android:text="-"
+                android:textColor="#000"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle"
+                android:layout_marginEnd="2dp" />
 
 
         </LinearLayout>
@@ -262,22 +265,10 @@
                 android:textColor="#333"
                 android:textSize="25sp"
                 tools:ignore="ButtonStyle" />
-
-
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:orientation="horizontal">
-
-
-
-
             <Button
                 android:id="@+id/buttonadd"
                 android:layout_width="wrap_content"
+                android:layout_marginRight="2dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/buttonbg"
@@ -286,7 +277,11 @@
                 android:textColor="#000"
                 android:textSize="30sp"
                 android:textStyle="bold"
-                tools:ignore="ButtonStyle" />
+                tools:ignore="ButtonStyle"
+                android:layout_marginEnd="2dp" />
+
+
+
         </LinearLayout>
 
     </LinearLayout>
