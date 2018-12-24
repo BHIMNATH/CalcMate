@@ -18,7 +18,6 @@
             android:id="@+id/edt1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:text="0"
             android:textSize="40sp"
             android:textColor="#000"
@@ -88,6 +87,19 @@
             android:layout_marginTop="3dp"
             android:orientation="horizontal">
             <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonbg"
+                android:minHeight="80dp"
+                android:text="5"
+                android:textColor="#333"
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle"
+                android:layout_marginStart="2dp" />
+            <Button
                 android:id="@+id/button6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -148,50 +160,6 @@
             android:layout_marginTop="2dp"
             android:orientation="horizontal">
             <Button
-                android:id="@+id/button4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/buttonbg"
-                android:minHeight="80dp"
-                android:text="4"
-                android:textColor="#333"
-                android:textSize="25sp"
-                tools:ignore="ButtonStyle" />
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="2dp"
-                android:layout_weight="1"
-                android:background="@drawable/buttonbg"
-                android:minHeight="80dp"
-                android:text="5"
-                android:textColor="#333"
-                android:textSize="25sp"
-                tools:ignore="ButtonStyle"
-                android:layout_marginStart="2dp" />
-
-            
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
-            android:orientation="horizontal">
-            <Button
-                android:id="@+id/button1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/buttonbg"
-                android:minHeight="80dp"
-                android:text="1"
-                android:textColor="#333"
-                android:textSize="25sp"
-                tools:ignore="ButtonStyle" />
-
-            <Button
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -218,6 +186,39 @@
                 android:textColor="#333"
                 android:textSize="25sp"
                 tools:ignore="ButtonStyle" />
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttonbg"
+                android:minHeight="80dp"
+                android:text="4"
+                android:textColor="#333"
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle" />
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/buttonbg"
+                android:minHeight="80dp"
+                android:text="1"
+                android:textColor="#333"
+                android:textSize="25sp"
+                tools:ignore="ButtonStyle" />
+
+
 
             <Button
                 android:id="@+id/buttonadd"
