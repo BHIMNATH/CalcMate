@@ -38,9 +38,9 @@ public class MainActivity extends AppCompatActivity {
         buttonAC = findViewById(R.id.buttonac);
         buttonEqual = findViewById(R.id.buttoneql);
         buttonBackspace = findViewById(R.id.buttonbackspace);
-        buttonAns = findViewById(R.id.buttonAns);
+//        buttonAns = findViewById(R.id.buttonAns);
         display = findViewById(R.id.edt1);
-        buttonSqrt = findViewById(R.id.buttonsqrt);
+//        buttonSqrt = findViewById(R.id.buttonsqrt);
 
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -299,23 +299,23 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        buttonAns.setOnClickListener(new View.OnClickListener() {
-            @SuppressLint("SetTextI18n")
-            @Override
-            public void onClick(View v) {
-
-            }
-        });
-        buttonSqrt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-//                try {
-//                    display.setText((int) Math.sqrt(Integer.parseInt(String.valueOf(display.getText()))));
-//                }
-//                catch (Exception e){
-//                    e.printStackTrace();
-//                }
-            }
-        });
+//        buttonAns.setOnClickListener(new View.OnClickListener() {
+//            @SuppressLint("SetTextI18n")
+//            @Override
+//            public void onClick(View v) {
+//
+//            }
+//        });
+//        buttonSqrt.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+////                try {
+////                    display.setText((int) Math.sqrt(Integer.parseInt(String.valueOf(display.getText()))));
+////                }
+////                catch (Exception e){
+////                    e.printStackTrace();
+////                }
+//            }
+//        });
     }
 }
