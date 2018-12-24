@@ -1,4 +1,4 @@
-package com.abnstudio.calcmate;
+package com.abnstudio.mrcalc;
 
 import org.junit.Test;
 

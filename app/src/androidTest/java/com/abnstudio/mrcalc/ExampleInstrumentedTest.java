@@ -1,4 +1,4 @@
-package com.abnstudio.calcmate;
+package com.abnstudio.mrcalc;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.abnstudio.calcmate", appContext.getPackageName());
+        assertEquals("com.abnstudio.mrcalc", appContext.getPackageName());
     }
 }
