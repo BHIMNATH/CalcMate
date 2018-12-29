@@ -228,6 +228,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 mValueTwo = Float.parseFloat(display.getText() + "");
                 try {
+                    //Calculations and Result Displaying - Equal button
                     if (mAddition) {
                         lastAns = mValueOne + mValueTwo;
                         display.setText( lastAns + "");
@@ -275,6 +276,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 try {
+                    //Appending dot on Textview- Dot button
                     display.setText(display.getText() + ".");
                 }
                 catch (Exception e){
@@ -289,7 +291,7 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     String str = display.getText().toString();
 
-                    //Removing Last Item from Display
+                    //Removing Last Item from Textview - Backspace button
                     if (str.length() > 1) {
                         str = str.substring(0, str.length() - 1);
                         display.setText(str);
