@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Buttons Linking
         button0 = findViewById(R.id.button0);
         button1 = findViewById(R.id.button1);
         button2 = findViewById(R.id.button2);
@@ -41,6 +42,8 @@ public class MainActivity extends AppCompatActivity {
         display = findViewById(R.id.edt1);
 //        buttonSqrt = findViewById(R.id.buttonsqrt);
 
+
+        //Button Listeners
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -285,6 +288,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 try {
                     String str = display.getText().toString();
+
+                    //Removing Last Item from Display
                     if (str.length() > 1) {
                         str = str.substring(0, str.length() - 1);
                         display.setText(str);
